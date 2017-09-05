@@ -86,8 +86,6 @@ function displayHits()
   fill(0, 255, 0);
   textSize(50);
   text(hits,360, 50);
-  text(ball_x, 360, 100);
-  text(ballDirX, 360, 200);
 }
 
 function endDisplay() {
