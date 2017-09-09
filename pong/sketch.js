@@ -66,7 +66,7 @@ function moveBall()
   
   if (ball_x <= 10 || ball_x >= 710)
   {
-    if (ball_y >= paddle_y && ball_y <= (paddle_y + 100))
+    if (ball_y > paddle_y && ball_y < (paddle_y + 100))
     {
       //hits the paddle
       
