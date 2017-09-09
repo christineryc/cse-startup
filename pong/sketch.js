@@ -58,8 +58,11 @@ function drawBall(ball_x, ball_y)
 
 function moveBall()
 {
-  ball_x += ballDirX;
-  ball_y += ballDirY;
+  if (ball_x >= 0 && ball_x <= 720)
+  {
+     ball_x += ballDirX;
+     ball_y += ballDirY;
+  }
   
   if (ball_x <= 10 || ball_x >= 710)
   {
