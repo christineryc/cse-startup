@@ -26,6 +26,7 @@ function draw() {
   movePaddles();
   drawBall(ball_x, ball_y);
   moveBall();
+  text(ballDirY,360, 150);
   if (ball_x >= 0 && ball_x <= 720)
   {
      displayHits();
@@ -66,7 +67,7 @@ function moveBall()
   
   if (ball_x <= 10 || ball_x >= 710)
   {
-    if (ball_y > paddle_y && ball_y < (paddle_y + 100))
+    if (ball_y >= paddle_y && ball_y <= (paddle_y + 100))
     {
       //hits the paddle
       
@@ -75,9 +76,9 @@ function moveBall()
     }
   }  
   if (ball_x < 0 || ball_x > 720)
-      {
-        endDisplay();
-      }
+  {
+      endDisplay();
+  }
   if (ball_y < 0 || ball_y > 400)
   {
     //bounce off north or south wall
