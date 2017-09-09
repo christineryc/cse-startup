@@ -26,7 +26,6 @@ function draw() {
   movePaddles();
   drawBall(ball_x, ball_y);
   moveBall();
-  text(ballDirY,360, 150);
   if (ball_x >= 0 && ball_x <= 720)
   {
      displayHits();
@@ -90,7 +89,8 @@ function displayHits()
 {
   fill(0, 255, 0);
   textSize(50);
-  text(hits,360, 50);
+  text(ballDirY, 360, 50);
+  //text(hits,360, 50);
 }
 
 function endDisplay() {
