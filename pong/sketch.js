@@ -26,7 +26,10 @@ function draw() {
   movePaddles();
   drawBall(ball_x, ball_y);
   moveBall();
-  displayHits();
+  if (ball_x >= 0 && ball_x <= 720)
+  {
+     displayHits();
+  }
 }
 
 function drawPaddles(paddle_y)
