@@ -68,8 +68,6 @@ function moveBall()
       //hits the paddle
       
       ballDirX = -1 * ballDirX;
-      // ball_x += ballDirX;
-      //ball_x = 700;
       hits++;
     }
   }  
